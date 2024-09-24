@@ -47,7 +47,7 @@ body {
 }
 
 .menu-nav .ativo {
-    color: aqua;
+    color: chocolate;
     font-size: 28px;
 }
 
@@ -83,4 +83,30 @@ body {
     font-size: 12px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.descricao {
+    font-size: 22px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    text-align: justify;
+}
+
+.imagem-cafeteria {
+    width: 600px;
+    height: auto;
+    margin: 20px;
 }
