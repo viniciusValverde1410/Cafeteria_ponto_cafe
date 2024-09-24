@@ -84,3 +84,40 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+
+.cardapio {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.descricao-cardapio {
+    padding-bottom: 25px;
+}
+
+
+.cardapio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cardapio li {
+    margin-bottom: 20px;
+}
+
+
+.cardapio-img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.titulo-cardapio {
+    margin-top: 15px;
+}
