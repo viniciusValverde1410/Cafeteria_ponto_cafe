@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
+
 <body>
-    
+    <header class="menu">
+        <img src="../img/logo.jpg" alt="Logo da Cafeteria" class="logo">
+        <h1>Cafeteria - Ponto do Café </h1>
+
+
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./menu.html">Cardápio</a></li>
+                <li><a href="./contato.html" class="ativo">Contato</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <h1 class="titulo"> Venha nos conhecer !</h1>
+
+
+    <main>
+        <h2 class="endereco">Endereço -R. João Previtale, 5 - Santa Cruz, Valinhos - SP, 13272-315</h2>
+
+
+        <a class="loc" href="https://maps.app.goo.gl/oaUoKEk1VJ6TcaiB6"><img src="../img/mapa.jpg" alt="Mapa"></a>
+
+
+        <h2 class="titulo-imagem">Aperte na imagem e seja direcionado para nossa localização no google maps! </h2>
+
+
+    </main>
+
+
+    <h1 class="titulo"> Para entrar em contato conosco, basta preencher o formulário abaixo.</h1>
+
+
+    <form class="forms" action="/submit" method="post" enctype="multipart/form-data" autocomplete="on" novalidate
+        accept-charset="UTF-8" target="_blank">
+
+
+        <fieldset class="forms-fieldset">
+            <legend>Informações pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required maxlength="100">
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seunome@Seugmail.com" required>
+
+
+            <label for="mensagem">Deixe uma mensagem!</label>
+            <textarea name="mensagem" id="mensagem" rows="S"
+                placeholder="Deixe sugestões ou conte sobre você..."></textarea>
+
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+
+
+    </form>
+
+
+    <footer class="site-footer">
+        <address class="contact-info">
+            <p class="author-name">Autores: Gabriela Fernanda e Vinicius Valverde</p>
+            <p class="author-email">Email:<a href="mailto:vinicius.valverde@aluno.senai.br"
+                    class="email-link">gabriela.f.barbosa@aluno.senai.br</a></p>
+            <p class="author-email">Email:<a href="mailto:gabriela.f.barbosa@aluno.senai.br"
+                    class="email-link">vinicius.valverde@aluno.senai.br</a></p>
+        </address>
+        <p class="copy-info">&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+
+
 </body>
+
+
 </html>
