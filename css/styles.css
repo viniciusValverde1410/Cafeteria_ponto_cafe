@@ -6,7 +6,7 @@
 
 :root {
     --cor-fundo: #e0d4d4;
-    --cor-menu-footer: #333 
+    --cor-secundaria: #a56735a2;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
 }
 
 .menu {
-
     color: #000000;
     padding: 20px;
     text-align: center;
@@ -27,7 +26,6 @@ body {
     font-size: 20px;
 }
  
-
 .logo {
     width: 100px;
     height: auto;
@@ -58,8 +56,8 @@ body {
 }
 
 .site-footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--cor-secundaria);
+    color: #000000;
     padding: 10px 20px;
     text-align: center;
 }
@@ -81,7 +79,7 @@ body {
 }
 
 .email-link {
-    color: #fff;
+    color: var();
     text-decoration: none;
 }
 
@@ -99,8 +97,9 @@ body {
 }
 
 .titulo {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: center;
+
 }
 
 .descricao {
@@ -122,12 +121,14 @@ body {
     margin: 40px auto;
     padding: 20px;
     background-color: #a56735a2;
-    border: 10cm;
+    border-radius: 20px;
 }
-
 
 .descricao-cardapio {
     padding-bottom: 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: var(--cor-fundo);
 }
 
 .cardapio ul {
@@ -139,6 +140,7 @@ body {
 
 .cardapio li {
     margin-bottom: 20px;
+    color: white;
 }
 
 
@@ -152,6 +154,8 @@ body {
 
 .titulo-cardapio {
     margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .endereco {
@@ -202,6 +206,6 @@ body {
 }
 
 .forms button:hover {
-    background-color: rgb(76, 76, 76);
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: white
 }
