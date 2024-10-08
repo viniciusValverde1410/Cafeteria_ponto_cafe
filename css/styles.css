@@ -7,6 +7,8 @@
 :root {
     --cor-fundo: #e0d4d4;
     --cor-secundaria: #a56735a2;
+    --cor-escrita: #000000;
+    --cor-branco: #ffffff;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 }
 
 .menu {
-    color: #000000;
+    color: var(--cor-escrita);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -46,7 +48,7 @@ body {
 }
 
 .menu-nav a {
-    color: #000000;
+    color: var(--cor-escrita);
     text-decoration: none;
 }
 
@@ -57,29 +59,36 @@ body {
 
 .site-footer {
     background-color: var(--cor-secundaria);
-    color: #000000;
-    padding: 10px 20px;
+    color: var(--cor-escrita);
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
 }
 
 .contact-info {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .author-name {
     font-size: 14px;
-    margin-bottom: 10px;
+    display: flex;
     text-align: center;
+    padding: 10px;
 }
 
 .author-email {
     font-size: 12px;
-    margin-bottom: 10px;
+    display: flex;
     text-align: center;
 }
 
 .email-link {
-    color: var();
+    color: var(--cor-fundo);
     text-decoration: none;
 }
 
@@ -91,29 +100,38 @@ body {
 
 .conteudo-principal {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 30px;
 }
 
 .titulo {
-    margin-top: 0px;
+    display: flex;
     text-align: center;
-
+    flex-direction: column;
 }
 
 .descricao {
     font-size: 22px;
-    text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: justify;
 }
 
 .imagem-cafeteria {
     width: 600px;
     height: auto;
-    margin: 20px;
+    display: flex;
+}
+
+.titulo-cardapio1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 10px;
+    color: var(--cor-escrita);
 }
 
 .cardapio {
@@ -128,7 +146,7 @@ body {
     padding-bottom: 25px;
     box-sizing: border-box;
     font-size: 16px;
-    color: var(--cor-fundo);
+    color: var(--cor-branco);
 }
 
 .cardapio ul {
@@ -140,7 +158,7 @@ body {
 
 .cardapio li {
     margin-bottom: 20px;
-    color: white;
+    color: var(--cor-branco)
 }
 
 
@@ -155,23 +173,19 @@ body {
 .titulo-cardapio {
     margin-top: 15px;
     margin-bottom: 10px;
-    color: white;
+    color: var(--cor-branco);
 }
 
 .endereco {
     margin: 10px;
     padding: 20px;
-    text-align: center;
-}
-
-.loc {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
 .loc img {
-    width: 740px;
+    width: 70px;
     height: auto;
 }
 
@@ -207,5 +221,61 @@ body {
 
 .forms button:hover {
     background-color: var(--cor-secundaria);
-    color: white
+    color: var(--cor-branco)
+}
+
+@media (max-width: 600px) {
+
+    .titulo {
+        margin: 10px;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .imagem-cafeteria {
+        width: 400px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .forms textarea{
+        width: calc(100% - 200px);
+        height: 140px;
+    } 
+
+    .loc {
+        width: 500px;
+        height: auto;
+        display: flex;
+    }
+}
+
+@media (min-width:601px) and (max-width: 1300px) {
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .forms textarea{
+        width: calc(100% - 200px);
+        height: 140px;
+    } 
+
+    .loc {
+        width: 400px;
+        height: auto;
+    }
+
+    .main-endereco {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
 }
