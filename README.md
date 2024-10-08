@@ -21,4 +21,4 @@ Você tem duas formas de acessar nosso projeto;
 Clone o repositório:
    git clone https://github.com/viniciusValverde1410/Cafeteria_ponto_cafe.git
 
-Ou atráves do link do nosso github pages (link)
+Ou atráves do link do nosso github pages https://viniciusvalverde1410.github.io/Cafeteria_ponto_cafe/
