@@ -19,7 +19,6 @@ O site foi estilizado com **CSS**, aplicando cores fontes e um layout agradável
 ## Como rodar o projeto 🚀
 Você tem duas formas de acessar nosso projeto;
 Clone o repositório:
-   ''bash
    git clone https://github.com/viniciusValverde1410/Cafeteria_ponto_cafe.git
 
 Ou atráves do link do nosso github pages (link)
