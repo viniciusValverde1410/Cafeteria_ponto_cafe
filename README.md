@@ -17,4 +17,9 @@ Exibe o endereço completo da cafeteria e um formulario de contato com campos de
 O site foi estilizado com **CSS**, aplicando cores fontes e um layout agradávele intuitivo. Cada página inclui cabeçalho, rodapé e navegação entre as páginas.
 
 ## Como rodar o projeto 🚀
+Você tem duas formas de acessar nosso projeto;
+Clone o repositório:
+   '''bash
+   git clone https://github.com/viniciusValverde1410/Cafeteria_ponto_cafe.git
 
+Ou atráves do link do nosso github pages (link)
