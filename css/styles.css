@@ -7,13 +7,19 @@
 :root {
     --cor-fundo: #e0d4d4;
     --cor-secundaria: #a56735a2;
+    --cor-letra: #white;
+    --cor-cardapio: #a56735a2;
+    --cor-botoes: rgb(165, 103, 59);
+    --cor-LetraRodape: #000000;
+    --cor_PalavrasNaoEScolhidas: #000000;
+    --cor_bodyEprecos:#333;
     --cor-escrita: #000000;
     --cor-branco: #ffffff;
 }
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--cor_bodyEprecos);
     background-color: var(--cor-fundo);
     font-size: 14px;
 }
@@ -26,6 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+;
 }
  
 .logo {
@@ -53,7 +60,7 @@ body {
 }
 
 .menu-nav .ativo {
-    color: rgb(165, 103, 59);
+    color: var(--cor-botoes);
     font-size: 28px;
 }
 
@@ -138,7 +145,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #a56735a2;
+    background-color: var(--cor-cardapio);
     border-radius: 20px;
 }
 
